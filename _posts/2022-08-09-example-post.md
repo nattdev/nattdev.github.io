@@ -1,5 +1,5 @@
-# Title Fist Post
-A first description
+
+A first brief description
 
 ## This is a first example post
 - List Items
