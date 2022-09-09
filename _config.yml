@@ -1,9 +1,9 @@
 #Build settings
 theme: minima
-title: nattdev's homepage
+title: Notas de Código
 author:
   name: nattdev
-description: Code notes for all
+description: Aprendizaje y Desarrollo de código
 
 show_excerpts: true
 
