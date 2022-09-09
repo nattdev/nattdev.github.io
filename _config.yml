@@ -5,3 +5,7 @@ author:
   name: nattdev
   email: email@email.com
 description: Code notes for all
+
+minima:
+  social_links:
+    github: nattdev
