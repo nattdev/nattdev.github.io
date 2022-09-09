@@ -1,12 +1,7 @@
 #Build settings
 theme: minima
-
 title: nattdev's homepage
 author:
   name: nattdev
+  email: email@email.com
 description: Code notes for all
-
-  # generate social links in footer
-  social_links:
-    github: nattdev
-
