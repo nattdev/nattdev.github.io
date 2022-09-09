@@ -1,11 +1,12 @@
-#Build settings
-theme: minima
+
 title: nattdev's homepage
 author:
   name: nattdev
 description: Code notes for all
 
-# generate social links in footer
-social_links:
-  github:  nattdev
-  
+  # generate social links in footer
+  social_links:
+    github: nattdev
+
+#Build settings
+theme: minima
