@@ -6,6 +6,8 @@ author:
   email: email@email.com
 description: Code notes for all
 
+show_excerpts: true
+
 minima:
   social_links:
     github: nattdev
