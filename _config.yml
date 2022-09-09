@@ -3,7 +3,6 @@ theme: minima
 title: nattdev's homepage
 author:
   name: nattdev
-  email: email@email.com
 description: Code notes for all
 
 show_excerpts: true
