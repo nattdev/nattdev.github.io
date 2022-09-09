@@ -1,3 +1,5 @@
+#Build settings
+theme: minima
 
 title: nattdev's homepage
 author:
@@ -8,5 +10,3 @@ description: Code notes for all
   social_links:
     github: nattdev
 
-#Build settings
-theme: minima
