@@ -2,8 +2,7 @@
 layout: post
 title: Explorando La Documentación De React
 ---
-
-*Recorriendo las características y componentes principales*
+Recorriendo las características y componentes principales
 - Las aplicaciones de React están conformadas por "componentes".
 - Un Componente es una pieza de UI (Interfaz de usuario).
 	- Puede ser como un botón.
@@ -39,6 +38,7 @@ export default function MyApp() {
 **- Los componentes de React siempre deben de comenzar con mayúsculas.**
 
 **- Las etiquetas HTML deben estar en minúsculas.**
+
 
 ### Sintaxis de marcado con JSX
 La sintaxis de marcado es totalmente opcional en React.
