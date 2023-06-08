@@ -1,5 +1,6 @@
 ---
 layout: post
+subtitle: Each post also has a subtitle
 ---
 ## Recorriendo las características y componentes principales
 - Las aplicaciones de React están conformadas por "componentes".
@@ -200,6 +201,7 @@ Los Hooks son más restrictivos que las funciones regulares. Solo puedes llamar 
 - Si quisiera utilizar useState en una condicional o en un bucle, se extrae un nuevo componente y se lo pone dentro de él.
 - A menudo necesitamos que los componentes compartan datos y se actualicen en conjunto para eso:
 	- Necesitamos mover el estado de los botones individuales "hacia arriba" al componente más cercano que los contiene a todos.
+	
 ```jsx
 export default function MyApp() {  
 	const [count, setCount] = useState(0);  
@@ -208,7 +210,7 @@ export default function MyApp() {
 		setCount(count + 1);  
 	}  
 
-// La información que pasas hacia abajo se llaman _props_. Ahora el componente `MyApp` contiene el estado `count` y el manejador de eventos `handleClick`, y _pasa ambos hacia abajo como props_ a cada uno de los botones.
+// La información que pasas hacia abajo se llaman props. Ahora el componente "MyApp" contiene el estado "count" y el manejador de eventos "handleClick", y pasa ambos hacia abajo como props a cada uno de los botones.
 
 return (  
 	<div>  
