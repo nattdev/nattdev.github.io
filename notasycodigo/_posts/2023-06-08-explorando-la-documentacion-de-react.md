@@ -3,6 +3,7 @@ layout: post
 title: Explorando La Documentación De React
 ---
 Recorriendo las características y componentes principales
+
 - Las aplicaciones de React están conformadas por "componentes".
 - Un Componente es una pieza de UI (Interfaz de usuario).
 	- Puede ser como un botón.
