@@ -1,21 +1,16 @@
 ---
 layout: page
-title: Notas y Codigo
-permalink: /notasycodigo/
-
+title: Proyectos
+permalink: /proyectos/
 ---
-
 <div class="home">
+  {%- assign category_name = "proyectos" -%}
 
-  {{ content }}
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
+  {%- if site.paginate -%}
+    {% assign posts = paginator.posts | where: "categories", category_name %}
+  {%- else -%}
+    {% assign posts = site.posts | where: "categories", category_name %}
+  {%- endif -%}
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
@@ -38,7 +33,7 @@ permalink: /notasycodigo/
       {%- endfor -%}
     </ul>
 
-    {% if site.paginate %}
+    {%- if site.paginate -%}
       <div class="pager">
         <ul class="pagination">
         {%- if paginator.previous_page %}
@@ -59,4 +54,3 @@ permalink: /notasycodigo/
   {%- endif -%}
 
 </div>
-
