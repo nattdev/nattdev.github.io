@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Explorando La Documentación De React
+categories: React
 ---
 Recorriendo las características y componentes principales
 
