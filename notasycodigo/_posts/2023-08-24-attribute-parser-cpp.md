@@ -70,16 +70,16 @@ Ahora con un bucle for almacenaremos los datos de entrada en los vectores. Utili
 
 ```cpp
 for (int i = 0; i < t; i++)
-    {
-        getline(cin, temp);
-        content.push_back(temp);
-    }
+{
+	getline(cin, temp);
+	content.push_back(temp);
+}
 
-    for (int i = 0; i < q; i++)
-    {
-        getline(cin, temp);
-        query.push_back(temp);
-    }
+for (int i = 0; i < q; i++)
+{
+	getline(cin, temp);
+	query.push_back(temp);
+}
 ```
 
 En esta segunda parte procesaremos los datos de entrada, Aquí, estableceremos un contenedor `map` que nos permitirá almacenar los elementos en pares clave-valor, donde la clave representa el atributo y el valor es su correspondiente valor. Además, crearemos un vector que utilizaremos para manejar las etiquetas del problema.
@@ -92,49 +92,48 @@ vector<string> tag;
 A través de un bucle for procesaremos cada línea del vector content y esta será asigna de manera temporal a la variable temp en cada iteración
 
 ```cpp
-    for (int i = 0; i < t; i++)
-    {
-        temp = content[i];
-        temp.erase(remove(temp.begin(), temp.end(), '"'), temp.end());
-        temp.erase(remove(temp.begin(), temp.end(), '>'), temp.end());
+for (int i = 0; i < t; i++)
+{
+	temp = content[i];
+	temp.erase(remove(temp.begin(), temp.end(), '"'), temp.end());
+	temp.erase(remove(temp.begin(), temp.end(), '>'), temp.end());
 
-        // remove devuelve un iterador apuntando a la posicion del primer elemento donde empiezan los elementos eliminados
-		// erase elimina los caracteres desde la posicion del iterador devuelto por remove hasta el final
+	// remove devuelve un iterador apuntando a la posicion del primer elemento donde empiezan los elementos eliminados
+	// erase elimina los caracteres desde la posicion del iterador devuelto por remove hasta el final
 
-		// Verificamos si la línea es una etiqueta de cierre
-        if (temp.substr(0, 2) == "</")
-        {
-            tag.pop_back();
-        }
-        else
-        {
-            stringstream ss;
-            ss.str("");
-            ss << temp;
-            string t1, a1, v1;
-            char ch;
-            ss >> ch >> t1 >> a1 >> ch >> v1;
+	// Verificamos si la línea es una etiqueta de cierre
+	if (temp.substr(0, 2) == "</")
+	{
+		tag.pop_back();
+	}
+	else
+	{
+		stringstream ss;
+		ss.str("");
+		ss << temp;
+		string t1, a1, v1;
+		char ch;
+		ss >> ch >> t1 >> a1 >> ch >> v1;
 
-            string temp1 = "";
-            if (tag.size() > 0)
-            {
-                temp1 = *tag.rbegin();
-                temp1 = temp1 + "." + t1;
-            }
-            else
-            }
-	            temp1 = t1;
-            {
-                
-            tag.push_back(temp1);
-            attr[*tag.rbegin() + "~" + a1] = v1;
-            while (ss)
-            {
-                ss >> a1 >> ch >> v1;
-                attr[*tag.rbegin() + "~" + a1] = v1;
-            }
-        }
-    }
+		string temp1 = "";
+		if (tag.size() > 0)
+		{
+			temp1 = *tag.rbegin();
+			temp1 = temp1 + "." + t1;
+		}
+		else
+	}
+	temp1 = t1;
+	{
+		tag.push_back(temp1);
+		attr[*tag.rbegin() + "~" + a1] = v1;
+		while (ss)
+		{
+			ss >> a1 >> ch >> v1;
+			attr[*tag.rbegin() + "~" + a1] = v1;
+		}
+	}
+}
 ```
 
 Por último procesaremos las consultas, y verificamos si las consultas están dentro de el map attr, si es verdadero imprimiremos el valor,y si es falso imprimiremos Not Found!
@@ -142,14 +141,14 @@ Por último procesaremos las consultas, y verificamos si las consultas están de
 ```cpp
 for (int i = 0; i < q; i++)
 {
-    if (attr.find(query[i]) == attr.end())
-    {
-        cout << "Not Found!\n";
-    }
-    else
-    {
-        cout << attr[query[i]] << endl;
-    }
+	if (attr.find(query[i]) == attr.end())
+	{
+		cout << "Not Found!\n";
+	}
+	else
+	{
+		cout << attr[query[i]] << endl;
+	}
 }
 ```
 
