@@ -143,10 +143,15 @@ Por último procesaremos las consultas, y verificamos si las consultas están de
  for (int i = 0; i < q; i++)
  {
 	if (attr.find(query[i]) == attr.end())
+	{
             cout << "Not Found!\n";
-        else
+        }
+	else
+	{
             cout << attr[query[i]] << endl;
+	}
 }
 ```
 
+Diagrama Attribute Parser
 ![diagram-attribute-parser](https://raw.githubusercontent.com/nattdev/nattdev.github.io/main/assets/images/diagrams/diagram-attr-parser.svg)
