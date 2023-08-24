@@ -135,20 +135,18 @@ A través de un bucle for procesaremos cada línea del vector content y esta ser
             }
         }
     }
-
 ```
 
 Por último procesaremos las consultas, y verificamos si las consultas están dentro de el map attr, si es verdadero imprimiremos el valor,y si es falso imprimiremos Not Found!
 
 ```cpp
  for (int i = 0; i < q; i++)
-    {
-        if (attr.find(query[i]) == attr.end())
+ {
+	if (attr.find(query[i]) == attr.end())
             cout << "Not Found!\n";
         else
             cout << attr[query[i]] << endl;
-    }
-
+}
 ```
 
-![diagram-attribute-parser](https://github.com/nattdev/nattdev.github.io/blob/3fc94de0e7a3204deb3e8fa6d9609742b8bf5af2/assets/images/diagrams/diagram-attr-parser.svg)
+![diagram-attribute-parser](https://raw.githubusercontent.com/nattdev/nattdev.github.io/main/assets/images/diagrams/diagram-attr-parser.svg)
