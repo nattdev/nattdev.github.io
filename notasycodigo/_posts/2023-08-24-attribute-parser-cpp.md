@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resolviendo Attribute Parser c++
-categories: "Hacker Rank c++"
+category: "Hacker Rank c++"
 ---
 El desafío Attribute Parser es un problema de procesamiento de cadenas que implica analizar y buscar atributos dentro de etiquetas.
 
