@@ -139,18 +139,19 @@ A través de un bucle for procesaremos cada línea del vector content y esta ser
 
 Por último procesaremos las consultas, y verificamos si las consultas están dentro de el map attr, si es verdadero imprimiremos el valor,y si es falso imprimiremos Not Found!
 
-```cpp
- for (int i = 0; i < q; i++)
- {
-	if (attr.find(query[i]) == attr.end())
-	{
-            cout << "Not Found!\n";
-        }
-	else
-	{
-            cout << attr[query[i]] << endl;
-	}
+```
+for (int i = 0; i < q; i++)
+{
+    if (attr.find(query[i]) == attr.end())
+    {
+        cout << "Not Found!\n";
+    }
+    else
+    {
+        cout << attr[query[i]] << endl;
+    }
 }
+
 ```
 
 Diagrama Attribute Parser
