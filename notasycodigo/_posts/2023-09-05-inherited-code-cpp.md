@@ -13,17 +13,14 @@ Puedes ver el problema completo en su [página oficial](https://www.hackerrank.c
 Declararemos una clase llamada BadLenghtException que hereda de la clase base `exception`. Esto lo convierte en un tipo de excepción que puede ser capturado y manejado. También declararemos una variable privada de tipo string llamada `message`.
 
 ```cpp
-
 class BadLenghtException : public exception {
     private:
         string message;
 };
-
 ```
 Creamos un constructor de la clase, este recibirá un argumento `n`, que representa la longitud del nombre de usuario. Seguido de dos puntos `:` inicializamos el atributo `message` y que recibirá al valor `n` convertido en una cadena de caracteres.
 
 ```cpp
-
 class BadLenghtException : public exception {
     private:
         string message;
@@ -63,4 +60,61 @@ class BadLenghtException : public exception {
             return message.c_str();
         }
 };
+```
+### Código Completo
+```cpp
+//C++14
+
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <exception>
+using namespace std;
+
+class BadLengthException {
+    private:
+    string message;
+    public:
+        BadLengthException(int n) : message(to_string(n)) {}
+        const char* what() const throw() {
+            return message.c_str();
+        }
+};
+
+//** Código presentado en el problema  **//
+
+bool checkUsername(string username) {
+	bool isValid = true;
+	int n = username.length();
+	if(n < 5) {
+		throw BadLengthException(n);
+	}
+	for(int i = 0; i < n-1; i++) {
+		if(username[i] == 'w' && username[i+1] == 'w') {
+			isValid = false;
+		}
+	}
+	return isValid;
+}
+
+int main() {
+	int T; cin >> T;
+	while(T--) {
+		string username;
+		cin >> username;
+		try {
+			bool isValid = checkUsername(username);
+			if(isValid) {
+				cout << "Valid" << '\n';
+			} else {
+				cout << "Invalid" << '\n';
+			}
+		} catch (BadLengthException e) {
+			cout << "Too short: " << e.what() << '\n';
+		}
+	}
+	return 0;
+}
+
+//*************************************//
 ```
