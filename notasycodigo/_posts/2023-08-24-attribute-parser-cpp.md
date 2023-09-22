@@ -9,6 +9,8 @@ Nos muestran un lenguaje de marcado personalizado llamado HRML, estas etiquetas 
 Además, todos los atributos solo los encontraremos en las etiquetas de inicio.
 Estos atributos pueden ser referenciados con el nombre del tag y el símbolo de la virgulilla o tilde "~"
 
+La dificultad de este problema se encuentra en que pueden existir etiquetas anidadas.
+
 Puedes ver el problema completo en su [página oficial](https://www.hackerrank.com/challenges/attribute-parser/problem).
 
 ```cpp
@@ -149,6 +151,95 @@ for (int i = 0; i < q; i++)
 	{
 		cout << attr[query[i]] << endl;
 	}
+}
+```
+
+### Código Completo
+```cpp
+// C++14
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include <sstream>
+using namespace std;
+
+
+int main() {
+    
+    int t, q;
+    cin >> t >> q;
+    string temp;
+    vector<string> content;
+    vector<string> query;
+    cin.ignore();
+
+    for (int i = 0; i < t; i++)
+    {
+        getline(cin, temp);
+        content.push_back(temp);
+    }
+
+    for (int i = 0; i < q; i++)
+    {
+        getline(cin, temp);
+        query.push_back(temp);
+    }
+
+    map<string, string> attr;
+    vector<string> tag;
+
+    for (int i = 0; i < t; i++)
+    {
+        temp = content[i];
+        temp.erase(remove(temp.begin(), temp.end(), '"'), temp.end());
+        temp.erase(remove(temp.begin(), temp.end(), '>'), temp.end());
+
+        if (temp.substr(0, 2) == "</")
+        {
+            tag.pop_back();
+        }
+        else
+        {
+            stringstream ss;
+            ss.str("");
+            ss << temp;
+            string t1, a1, v1;
+            char ch;
+            ss >> ch >> t1 >> a1 >> ch >> v1;
+
+            string temp1 = "";
+            if (tag.size() > 0)
+            {
+                temp1 = *tag.rbegin();
+                temp1 = temp1 + "." + t1;
+            }
+            else
+            {
+                temp1 = t1;
+            }
+            tag.push_back(temp1);
+            attr[*tag.rbegin() + "~" + a1] = v1;
+            while (ss)
+            {
+                ss >> a1 >> ch >> v1;
+                attr[*tag.rbegin() + "~" + a1] = v1;
+            }
+        }
+    }
+
+    for (int i = 0; i < q; i++)
+    {
+        if (attr.find(query[i]) == attr.end())
+            cout << "Not Found!\n";
+        else
+            cout << attr[query[i]] << endl;
+    }
+
+    return 0;
 }
 ```
 
