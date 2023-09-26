@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Estructura básica de una página web en HTML
+title: Estructura Básica de una Página Web en HTML
 category: "Bases HTML"
 ---
 
