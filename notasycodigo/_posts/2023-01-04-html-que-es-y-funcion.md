@@ -3,6 +3,7 @@ layout: post
 title: HTML y su Función en el Desarrollo Web
 category: "Bases HTML"
 ---
+HTML es el lenguaje que da forma a la información y la presenta en la pantalla. Podríamos decir que es el cimiento sobre el cual se construye cada página web.
 
 ## ¿Qúe es HTML?
 El Lenguage de Marcado de Hipertexto (Hipertext Markup Language) o más conocido como HTML, es el **lenguaje de marcado estándar** utilizado para crear y estructurar el contenido de las páginas web. Se basa en una estructura de etiquetas que la componen. Cada etiqueta le da información al navegador para poder renderizar o visualizar los contenidos de la página web de una manera correcta.
