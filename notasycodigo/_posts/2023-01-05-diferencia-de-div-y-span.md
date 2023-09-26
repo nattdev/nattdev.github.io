@@ -3,7 +3,7 @@ layout: post
 title: Diferencia Entre las Etiquetas div y span
 category: "Bases HTML"
 ---
-Las etiquetas div y span son dos elementos esenciales dentro de la estructura de una páginan web, pero cada una desempeña un papel distinto en la presentación del contenido.
+Las etiquetas div y span son dos elementos esenciales dentro de la estructura de una página web, pero cada una desempeña un papel distinto en la presentación del contenido.
 
 # ¿Qué es un div ?
 Un div es una etiqueta de HTML, se utiliza para organizar el contenido de la página, actúa como un contenedor para los elemetos que se encuentran dentro.
