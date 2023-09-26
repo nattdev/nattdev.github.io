@@ -59,15 +59,15 @@ Todos los elementos que encontramos en body se muestran directamente al usuario.
     </header>
     <main> <!-- Contenido principal de la página -->
         <section id="seccion1"> <!-- Sección 1 -->
-            <h2>Subtítulo de la Sección 1</h2>
+            <h2>Título de la Sección 1</h2>
             <p>Contenido de la sección 1</p>
         </section>
         <section id="seccion2"> <!-- Sección 2 -->
-            <h2>Subtítulo de la Sección 2</h2>
+            <h2>Título de la Sección 2</h2>
             <p>Contenido de la sección 2</p>
         </section>
         <section id="seccion3"> <!-- Sección 3 -->
-            <h2>Subtítulo de la Sección 3</h2>
+            <h2>Título de la Sección 3</h2>
             <p>Contenido de la sección 3</p>
         </section>
     </main>
