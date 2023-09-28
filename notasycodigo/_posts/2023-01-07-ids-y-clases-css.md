@@ -32,11 +32,11 @@ Los selectores Ids empiezan con el caracter numeral `#` y luego el valor de su a
 ```css
 /*** styles.css ***/
 #seccion1 {
-    color: red; // Aplica el color rojo al texto
+    color: red; /* Aplica el color rojo al texto */
 }
 
 #seccion2 {
-    color: blue; // Aplica el color azul al texto
+    color: blue; /* Aplica el color azul al texto */
 }
 ```
 
@@ -72,14 +72,14 @@ Los selectores de clase se identifican con un punto al inicio `.` seguido del no
 ```css
 /*** styles.css ***/
 .title-red {
-    color: red; // Aplica el color de texto rojo
+    color: red; /* Aplica el color de texto rojo */
 }
 
 .text-bold {
-    font-weight: bold; // Aplica el formato del texto negrita
+    font-weight: bold; /* Aplica el formato del texto negrita */
 }
 
 .text-blue {
-    color: blue; // Aplica el color de texto azul
+    color: blue; /* Aplica el color de texto azul */
 }
 ```
