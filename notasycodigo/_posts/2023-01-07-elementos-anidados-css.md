@@ -3,7 +3,7 @@ layout: post
 title: Selección de Elementos Anidados CSS
 category: "Bases CSS"
 ---
-Hay varias opciones al momento de realizar una selección de elementos anidados con CSS. Los selectores junto con los combinadores forman selectores compuestos que seleccionan elementos de forma más precisa.
+Hay varias opciones al momento de realizar una selección de elementos anidados con CSS. Los selectores junto con los combinadores forman selectores compuestos que nos permiten identificar elementos de forma más precisa.
 
 ## Selector con descendiente
 Selecciona los descendientes, es decir los elementos que tienen por **padre al mismo elemento**. 
