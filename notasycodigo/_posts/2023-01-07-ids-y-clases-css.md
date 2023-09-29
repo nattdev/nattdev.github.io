@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ids y Clases en CSS
+title: Selectores de Ids y Clases
 category: "Bases CSS"
 ---
 Con los selectores de Id y de clase podemos aplicar estilos a elementos específicos de una página web.
