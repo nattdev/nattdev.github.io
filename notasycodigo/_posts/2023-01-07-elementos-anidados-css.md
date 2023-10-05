@@ -30,13 +30,14 @@ El combinador `>` selecciona específicamente a los elementos que sean **hijos d
     <div class="section section-two">2</div> <!-- Elemento Seleccionado -->
     <div class="section-three">3
         <div class="section sub-section">3.1</div>
-        <div class="section sub-section">3.2</div> 
+        <div class="section sub-section">3.2</div>
+    </div>
 </div>
 ```
 
 ### Elementos anidados que sean hermanos del mismo padre
 Con la ayuda del combinador `~` se seleccionan a los elementos que tengan por **padre a un mismo elemento**, sin importar si hay elementos entre ellos.
-`.frutas .verde ~ .rojo` selecciona a todos los elementos con clase `.rojo` que sean hermanos del elemento con clase `.verde`.
+`.frutas .verde ~ .rojo` selecciona a todos los elementos con clase `.rojo` que sean hermanos del elemento con clase `.verde`. No es necesario que sean descendientes directos del elemento padre.
 
 ```html
 <div class="frutas"> <!-- Elemento Padre -->
@@ -45,6 +46,7 @@ Con la ayuda del combinador `~` se seleccionan a los elementos que tengan por **
     <div class="exoticas">
         <div class="verde"></div>
         <div class="rojo"></div> <!-- Elemento Seleccionado -->
+    </div>
 </div>
 ```
 
