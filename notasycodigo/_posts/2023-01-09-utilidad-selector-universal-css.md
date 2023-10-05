@@ -34,7 +34,7 @@ Para eliminar los estilos predeterminados de los navegadores, **establecemos nue
 ```css
 *, *::before, *::after {
   margin: 0; /** Resetea el margen de todos los elementos **/
-  padding 0; /** Resetea el padding de todos los elementos **/
+  padding: 0; /** Resetea el padding de todos los elementos **/
   box-sizing: border-box; /** Resetea el modelo de caja a border-box. **/
 }
 ```
