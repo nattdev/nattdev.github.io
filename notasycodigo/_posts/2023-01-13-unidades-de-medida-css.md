@@ -43,7 +43,7 @@ html {
 }
 
 .box {
-    font-size 13px;
+    font-size: 13px;
     width: 200px;
 }
 
