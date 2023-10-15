@@ -11,7 +11,7 @@ Dentro de los dispositivos que habitualmente usamos están las computadoras de e
 Para que el contenido de la página web pueda visualizarse de una forma correcta y adaptarse a los diferentes tipos de pantalla, es necesario usar los estilos CSS y una estructura HTML pensada en un **diseño responsive**, también llamado adaptable o responsivo.
 
 ## Mobile First
-Actualmente se ha expandido el uso del teléfono móvil en especial el de los smarthpones, además de las tablets, y es muy usado el concepto de Mobile First, que consiste en diseñar la página web priorizando su visualización en los dispositivos móviles.
+Actualmente se ha expandido el uso del teléfono móvil en especial el de los smarthpones, y es muy usado el concepto de Mobile First, que consiste en diseñar la página web priorizando su visualización en los dispositivos móviles.
 
 Esto indica que el proceso de desarrollo tiene que iniciarse pensando **primero en una versión móvil**, y luego se adapta a una versión para escritorio.
 
@@ -31,7 +31,6 @@ Se usa la regla `@media` seguido de declaraciones opcionales que definirán el a
 
 ```css
 @media screen and (max-width: 600px) {
-/** Estilos a aplicar **/
     div {
         display: flex
         flex-direction: column;
