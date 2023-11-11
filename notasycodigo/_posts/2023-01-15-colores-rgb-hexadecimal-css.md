@@ -39,7 +39,7 @@ Se utiliza un numeral `#` antes de todos los caracteres. Podemos representar los
 
 ```css
 color: #000; /* Sin intensidad de color - Negro */
-color: #00000;
+color: #000000;
 color: #fff; /* Intensidad de color - Blanco */
 color: #fffff;
 color: #f008; /* Color Rojo intenso con 0.5 de opacidad */
