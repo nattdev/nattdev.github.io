@@ -22,11 +22,13 @@ Se puede proporcionar un elemento adicional llamado "Alpha"(A), que es un canal 
 Usamos la notación funcional que se representa con la siguiente estructura: ``` rgb(R, G, B) ```
 
 ```css
+.rgb-colors {
 color: rgb(0, 0, 0); /* Sin intensidad de color - Negro */
 color: rgb(255, 255, 255); /* Intensidad de color - Blanco */
 color: rgba(255, 0, 0, 0.5); /* Color Rojo intenso con 0.5 de opacidad */
 color: rgba(0, 255, 0, 1); /* Color Verde intenso con 1 de opacidad */
 color: rgba(0, 0, 255, 0); /* Color Azul intenso con 0 de opacidad */
+}
 ```
 
 ## La notación Hexadecimal
@@ -38,6 +40,7 @@ Se utiliza un numeral `#` antes de todos los caracteres. Podemos representar los
 ` #RGB o #RGBA o #RRGGBB o #RRGGBBAA`
 
 ```css
+.hex-colors {
 color: #000; /* Sin intensidad de color - Negro */
 color: #000000;
 color: #fff; /* Intensidad de color - Blanco */
@@ -45,4 +48,5 @@ color: #fffff;
 color: #f008; /* Color Rojo intenso con 0.5 de opacidad */
 color: #0f0f; /* Color Verde intenso con 1 de opacidad */
 color: #00f0; /* Color Azul intenso con 0 de opacidad */
+}
 ```
