@@ -41,7 +41,7 @@ Se utiliza un numeral `#` antes de todos los caracteres. Podemos representar los
 color: #000; /* Sin intensidad de color - Negro */
 color: #00000;
 color: #fff; /* Intensidad de color - Blanco */
-color: #fffff; 
+color: #fffff;
 color: #f008; /* Color Rojo intenso con 0.5 de opacidad */
 color: #0f0f; /* Color Verde intenso con 1 de opacidad */
 color: #00f0; /* Color Azul intenso con 0 de opacidad */
