@@ -16,13 +16,18 @@ También pueden representarse con valores porcentuales, pero no pueden mezclarse
 
 ### Canal Alpha
 
-Se puede proporcionar un elemento adicional llamado "Alpha"(A), que es un canal que especifica la opacidad de color mediante los valores decimales de 0 para totalmente transparente entre 1 para opaco.
+Se puede proporcionar un elemento adicional llamado "Alpha"(A), que es un canal que especifica la opacidad de color mediante los valores decimales de 0 para totalmente transparente y 1 para opaco. Este elemento también puede ser representado con valores porcentuales.
 
 ### Sintaxis
-Usamos la notación funcional que se representa con la siguiente estructura: ``` rgb(R, G, B) ```
+Usamos la notación funcional que se representa con la siguiente estructura: ` rgb(R G B) o rgba(R G B / A) `
 
 ```css
 .rgb-colors {
+color: rgb(0 0 0); /* Sin intensidad de color - Negro */
+color: rgb(255 255 255); /* Intensidad de color - Blanco */
+color: rgba(255 0 0 / 50%); /* Color Rojo intenso con 0.5 de opacidad */
+
+/** Sintaxis Antigua con Comas **/
 color: rgb(0, 0, 0); /* Sin intensidad de color - Negro */
 color: rgb(255, 255, 255); /* Intensidad de color - Blanco */
 color: rgba(255, 0, 0, 0.5); /* Color Rojo intenso con 0.5 de opacidad */
