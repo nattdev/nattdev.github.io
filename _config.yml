@@ -1,6 +1,6 @@
 #Build settings
 theme: minima
-title: nattdev's home
+title: nattdev
 author:
   name: nattdev
 description: Aprendizaje y Desarrollo de código
@@ -18,3 +18,4 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       permalink: "/:categories/:title"
+      
