@@ -8,9 +8,13 @@
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
+    {% if page.url != "/" %}
     <div class="wrapper">
       {{ content }}
     </div>
+    {% else %}
+    {{ content }}
+    {% endif %}
   </main>
 
   {%- include footer.html -%}
