@@ -1,0 +1,131 @@
+// start content
+
+/* CSS reset */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/** Navigation **/
+
+.site-nav {
+  z-index: 600;
+}
+
+/** Presentation Section **/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-animation{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #42424286;
+}
+
+.main-text {
+  z-index: 5000;
+  position: relative;
+  padding: 1rem 15px;
+  text-align: center;
+}
+
+.main-text span{
+  font-size: 1rem;
+}
+
+.main-text__title {
+  color: #1e1e1e;
+}
+
+.main-text__title span{
+  color: #7b7b7b;
+}
+
+.main-text__description {
+  color: #757575;
+}
+
+.scroll-text{
+  position: relative;
+  font-size: 0;
+  font-family: sans-serif;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.text-animation.left{
+  text-align: left;
+}
+
+.text-animation.right{
+  text-align: right;
+}
+
+.scroll-text:nth-child(2) {
+  margin: 0 2.5rem;
+}
+
+.scroll-text:nth-child(3) {
+  margin: 0 1rem;
+}
+
+.scroll-text:nth-child(4) {
+  margin: 0 0.1rem;
+}
+
+.scroll-text span.fl {
+  position: relative;
+  display: inline-block;
+  font-size: 1.9rem;
+  line-height: normal;
+}
+
+.scroll-text:nth-child(1) span.fl {
+  font-size: 2.6rem;
+}
+
+.scroll-text:nth-child(2) span.fl {
+  font-size: 2.0rem;
+}
+
+.scroll-text:nth-child(3) span.fl {
+  font-size: 2.3rem;
+}
+
+.wrapper-animation p {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.presentation-section {
+  background-color: #ffffff;
+  color: #424242;
+  width: 100%;
+  padding: 0 15rem;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .presentation-section {
+    padding: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  h4 {
+    font-size: 15px!important;
+  }
+}
