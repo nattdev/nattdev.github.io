@@ -22,7 +22,7 @@
   flex-wrap: wrap;
 }
 
-.wrapper-animation{
+.wrapper-animation {
   position: relative;
   width: 100%;
   height: 100%;
@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-.main-text span{
+.main-text span {
   font-size: 1.2rem;
 }
 
@@ -45,7 +45,7 @@
   color: #1e1e1e;
 }
 
-.main-text__title span{
+.main-text__title span {
   color: #7b7b7b;
 }
 
@@ -53,7 +53,7 @@
   color: #757575;
 }
 
-.scroll-text{
+.scroll-text {
   position: relative;
   font-size: 0;
   font-family: sans-serif;
@@ -61,11 +61,11 @@
   width: 100%;
 }
 
-.text-animation.left{
+.text-animation.left {
   text-align: left;
 }
 
-.text-animation.right{
+.text-animation.right {
   text-align: right;
 }
 
@@ -119,6 +119,11 @@
 
 /** Projects Section **/
 
+.project-title {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
 /* Headings */
 
 /* Main heading for card's front cover */
@@ -135,8 +140,8 @@
 }
 
 /* Main heading for inside page */
-.inside-page__heading { 
-  padding-bottom: 1rem; 
+.inside-page__heading {
+  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -152,7 +157,7 @@
 }
 
 .inside-page__heading--city,
-.card-front__text-view--city { 
+.card-front__text-view--city {
   margin: 0rem;
   color: #1E1E1E;
   font-weight: 700;
@@ -162,7 +167,9 @@
 
 /* Front cover */
 
-.card-front__tp { color: #1e1e1e; }
+.card-front__tp {
+  color: #1e1e1e;
+}
 
 /* For pricing text on card front cover */
 .card-front__text-price {
@@ -204,7 +211,7 @@
   z-index: 10;
 }
 
-.inside-page__btn::before { 
+.inside-page__btn::before {
   content: "";
   height: 100%;
   left: 0;
@@ -215,23 +222,23 @@
   z-index: -1;
 }
 
-.inside-page__btn--city { 
+.inside-page__btn--city {
   border-color: #1e1e1e;
-  color: #1e1e1e!important;
+  color: #1e1e1e !important;
   padding: 0.2rem 0.4rem;
   font-size: 1.1rem;
   margin: 0.2rem;
 }
 
-.inside-page__btn--city::before { 
+.inside-page__btn--city::before {
   background-color: #1e1e1e;
 }
 
-.inside-page__btn:hover { 
-  color: #fafbfa!important;
+.inside-page__btn:hover {
+  color: #fafbfa !important;
 }
 
-.inside-page__btn:hover::before { 
+.inside-page__btn:hover::before {
   transform: scaleY(1);
 }
 
@@ -283,11 +290,12 @@
 /* A container to hold the flip card and the inside page */
 .card {
   background-color: transparent;
-  height: 15rem;
+  height: 17rem;
   position: relative;
   transition: all 1s ease;
   width: 15rem;
 }
+
 
 /* Flip card - covering both the front and inside front page */
 
@@ -305,7 +313,7 @@
 
 /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
 /* This is done so content in the inside page can be selected */
-.flip-card > * {
+.flip-card>* {
   visibility: visible;
 }
 
@@ -318,6 +326,10 @@
   transform-style: preserve-3d;
   transition: all 1s ease;
   width: 100%;
+}
+
+.card-area .card-container-section:nth-of-type(even) .flip-card__container {
+  transform-origin: right;
 }
 
 .card-front,
@@ -392,7 +404,7 @@
   position: absolute;
   right: 0;
   transition: all 1s ease;
-  width: 15rem;
+  width: 14.9rem;
   z-index: 1;
   border-radius: 14px;
 }
@@ -402,31 +414,50 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  text-align: center; 
+  text-align: center;
   width: 100%;
 }
 
 /* Functionality ====================================*/
 
 /* This is to keep the card centered (within its container) when opened */
-.card:hover {
-  box-shadow:
-  -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.30);
-  width: 24rem;
+
+.card-area .card-container-section:nth-child(even) .card:hover {
+  width: 8rem;
 }
 
 .card-area .card-container-section:nth-child(odd) .card:hover {
-  width: 12rem;
+  width: 24rem;
+}
+
+@keyframes card-position-left {
+  0% {}
+
+  100% {
+    width: 16.3rem;
+  }
+}
+
+@keyframes card-position-right {
+  0% {}
+
+  100% {
+    width: 14rem;
+  }
 }
 
 /* When the card is hovered, the flip card container will rotate */
 .card:hover .flip-card__container {
+  transform: rotateY(180deg);
+}
+
+.card-area .card-container-section:nth-child(odd) .card:hover .flip-card__container {
   transform: rotateY(-180deg);
 }
 
 /* When the card is hovered, the shadow on the inside page will shrink to the left */
 .card:hover .inside-page {
-  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+  // box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 1000px) {
@@ -438,12 +469,28 @@
 
 @media screen and (max-width: 800px) {
   h4 {
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
 }
 
 @media screen and (max-width: 600px) {
   .card-area {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card-area .card-container-section:nth-child(even) .card:hover {
+    animation: card-position-left 1.2s ease 2s forwards;
+  }
+
+  .card-area .card-container-section:nth-child(odd) .card:hover {
+    animation: card-position-right 1.2s ease 2s forwards;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card-area .card-container-section:nth-child(even) .card:hover {
+    width: 1rem;
   }
 }
