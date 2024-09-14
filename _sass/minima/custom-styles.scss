@@ -268,11 +268,11 @@
   margin: auto;
 }
 
-.card-area .card-container-section:nth-child(odd) {
+.card-area .card-container-section:nth-child(even) {
   transform: translateX(calc(100% - 264px));
 }
 
-.card-area .card-container-section:nth-child(even) {
+.card-area .card-container-section:nth-child(odd) {
   transform: translateX(-5px);
 }
 
@@ -285,7 +285,7 @@
   height: fit-content;
   justify-content: center;
   width: fit-content;
-  margin: 1rem;
+  margin: 0.3rem 1rem;
 }
 
 /* A container to hold the flip card and the inside page */
@@ -323,14 +323,14 @@
   height: 100%;
   position: absolute;
   right: 0;
-  transform-origin: left;
+  transform-origin: right;
   transform-style: preserve-3d;
   transition: all 1s ease;
   width: 100%;
 }
 
 .card-area .card-container-section:nth-of-type(even) .flip-card__container {
-  transform-origin: right;
+  transform-origin: left;
 }
 
 .card-front,
@@ -449,11 +449,11 @@
 
 /* When the card is hovered, the flip card container will rotate */
 .card:hover .flip-card__container {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .card-area .card-container-section:nth-child(odd) .card:hover .flip-card__container {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 
 /* When the card is hovered, the shadow on the inside page will shrink to the left */
@@ -496,6 +496,9 @@
     padding: 1rem;
   }
 
+  .card-section {
+    margin: 0rem 1rem;
+  }
   
   .blog__post-container {
     display: flex;
