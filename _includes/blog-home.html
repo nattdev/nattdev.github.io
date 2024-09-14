@@ -3,7 +3,7 @@
 
 {% assign total_posts = selected_post_1 | concat: selected_post_2 %}
 <section class="blog__section">
-    <h3 class="blog__section-title">&lt;Blog title="Notas y Código ☕" /&gt;</h3>
+    <h3 class="blog__section-title">&lt;Blog <span>title=<span>"Notas y Código ☕"</span></span> /&gt;</h3>
     <div class="blog__post-container">
         {% for post in total_posts %}
         <article class="blog__post">
