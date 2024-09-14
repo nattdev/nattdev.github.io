@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Acerca de
+title: Acerca de 👩‍💻
 permalink: /acercade/
 ---
