@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notas y Código
+title: Notas y Código ☕
 permalink: /notasycodigo/
 
 ---
@@ -12,5 +12,5 @@ permalink: /notasycodigo/
 
   <p>Documentación y notas del ciclo de desarrollo de software, tecnologías web, y lenguajes de programación</p>
 
-  {%- include categories.html -%}
+  {%- include blog-categories.html -%}
 </div>
