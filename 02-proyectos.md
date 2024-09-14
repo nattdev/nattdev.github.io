@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Proyectos
+title: Proyectos 🛠️
 permalink: /proyectos/
 ---
 <div class="home">
