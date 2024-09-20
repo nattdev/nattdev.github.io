@@ -176,7 +176,6 @@
   color: #1E1E1E;
   font-weight: 700;
   font-size: 1.2rem;
-  padding: 0 0 0.5rem;
 }
 
 /* Front cover */
@@ -197,6 +196,10 @@
 .inside-page__text {
   color: #757575;
   font-size: 0.9rem;
+}
+
+.inside-page__text-footer {
+  font-size: 0.8rem;
 }
 
 /* Icons ===========================================*/
@@ -304,7 +307,7 @@
 /* A container to hold the flip card and the inside page */
 .card {
   background-color: transparent;
-  height: 17rem;
+  height: 19rem;
   position: relative;
   transition: all 1s ease;
   width: 15rem;
@@ -315,7 +318,7 @@
 
 /* An outer container to hold the flip card. This excludes the inside page */
 .flip-card {
-  height: 17rem;
+  height: 19rem;
   perspective: 100rem;
   position: absolute;
   right: 0;
@@ -372,7 +375,7 @@
   align-items: center;
   display: block;
   flex-direction: column;
-  height: 12rem;
+  height: 14rem;
   justify-content: center;
   padding: .75rem;
 }
@@ -413,7 +416,7 @@
   background-color: #ffffff;
   border: 1px solid #E3E3E3;
   // box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
-  height: 15rem;
+  height: 17rem;
   padding: 1rem;
   position: absolute;
   right: 0;
@@ -427,9 +430,14 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   height: 100%;
   text-align: center;
   width: 100%;
+}
+
+.inside-page__btn-projects {
+  margin: 2rem 0;
 }
 
 /* Functionality ====================================*/
