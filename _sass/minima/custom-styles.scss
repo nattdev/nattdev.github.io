@@ -11,8 +11,19 @@
 
 /** Navigation **/
 
+.site-header {
+  background: #ffffff;
+}
+
 .site-nav {
   z-index: 600;
+}
+
+.page-content {
+  padding-top: 0;
+  .wrapper {
+    padding-top: 30px;
+  }
 }
 
 /** Presentation Section **/
@@ -111,11 +122,54 @@
   background-color: #ffffff;
   color: #424242;
   width: 100%;
-  padding: 0 15rem;
+  padding: 30px 15rem;
   margin: 0;
   height: 100%;
   box-sizing: border-box;
 }
+
+/** Separator Section **/
+.decorator-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  opacity: 0.020;
+  height: 350px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.card-decorator {
+  position: fixed;
+  top: calc(60% - 33vw);
+  font-size: 30vw;
+  line-height: 0.40;
+  span {
+    font-size: 22vw;
+  }
+
+}
+@media screen and (max-width: 768px){
+  .decorator-container {
+    opacity: 0.050;
+  }
+
+  .card-decorator {
+    position: relative;
+    top: calc(55% - 33vw);
+    line-height: 0.60;
+    font-size: 35vw;
+    span {
+      position: relative;
+      left: -5rem;
+      font-size: 37vw;
+      opacity: 0.5;
+    }
+  }
+} 
+
 
 /** Projects Section **/
 
