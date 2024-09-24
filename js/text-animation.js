@@ -7,12 +7,14 @@ function parallaxScroll() {
     
     document.querySelectorAll('.y1').forEach(function(element) {
         element.style.transform = 'translate3d(0,' + (scrolled * -0.1) + 'px, 0)';
+        element.style.opacity = 1 - (scrolled * 0.001);
     });
     document.querySelectorAll('.y2').forEach(function(element) {
         element.style.transform = 'translate3d(0,' + (scrolled * -0.10) + 'px, 0)';
     });
     document.querySelectorAll('.y3').forEach(function(element) {
         element.style.transform = 'translate3d(0,' + (scrolled * -0.05) + 'px, 0)';
+        element.style.opacity = 1 - (scrolled * 0.002);
     });
     document.querySelectorAll('.y4').forEach(function(element) {
         element.style.transform = 'translate3d(0,' + (scrolled * -0.03) + 'px, 0)';
