@@ -223,15 +223,17 @@ pre, code, .highlighter-rouge .highlight {
    ul {
      display: flex;
      flex-wrap: wrap;
-     list-style: none;
      padding: 0.5rem 0 0;
- 
-     li {
-       padding: 0 1rem 0 0;
+     list-style-type: none;
+     li::after {
+      content:"•";
+      width: 5px;
+      height: 5px;
+      padding-inline-start: 5px;
+      padding-right: 5px;
      }
- 
      .soft {
-       opacity: 0.6;
+       opacity: 0.8;
      }
    }
  }
@@ -749,7 +751,7 @@ pre, code, .highlighter-rouge .highlight {
 
   .technologies-container {
     width: 80%;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     ul {
       padding: 0.5rem 0 0;
     }
@@ -764,7 +766,7 @@ pre, code, .highlighter-rouge .highlight {
   .project-title,
   .blog__section-title {
     font-size: 1.9rem;
-    padding: 0 1rem;
+    padding: 2.5rem 1rem;
   }
 }
 
