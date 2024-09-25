@@ -49,26 +49,30 @@ pre, code, .highlighter-rouge .highlight {
 .main-text {
   z-index: 5000;
   position: relative;
-  padding: 1rem 15px;
+  padding: 3.3rem 15px;
   text-align: center;
 }
 
 .main-text span {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .main-text__title {
   font-size: 1.6rem;
   color: #1e1e1e;
+  margin-bottom: 1.3rem;
 }
 
 .main-text__title span {
-  color: #7b7b7b;
+  color: #212121;
+  font-weight: 500;
 }
 
 .main-text__description {
   font-size: 1.09rem;
-  color: #3d3d3d;
+  color: #3c3c3c;
+  width: 82%;
+  margin: auto;
 }
 
 .scroll-text {
@@ -688,6 +692,11 @@ pre, code, .highlighter-rouge .highlight {
 }
 
 @media screen and (max-width: 768px){
+
+  .main-text__description {   
+    width: 100%;
+  }
+
   .decorator-container {
     opacity: 0.050;
   }
