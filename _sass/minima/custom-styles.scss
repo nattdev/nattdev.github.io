@@ -188,25 +188,6 @@ pre, code, .highlighter-rouge .highlight {
   }
 
 }
-@media screen and (max-width: 768px){
-  .decorator-container {
-    opacity: 0.050;
-  }
-
-  .card-decorator {
-    position: relative;
-    top: calc(55% - 33vw);
-    line-height: 0.60;
-    font-size: 35vw;
-    span {
-      position: relative;
-      left: -5rem;
-      font-size: 37vw;
-      opacity: 0.5;
-    }
-  }
-} 
-
 
 /** Projects Section **/
 
@@ -657,6 +638,25 @@ pre, code, .highlighter-rouge .highlight {
   }
 }
 
+@media screen and (max-width: 768px){
+  .decorator-container {
+    opacity: 0.050;
+  }
+
+  .card-decorator {
+    position: relative;
+    top: calc(55% - 33vw);
+    line-height: 0.60;
+    font-size: 35vw;
+    span {
+      position: relative;
+      left: -5rem;
+      font-size: 37vw;
+      opacity: 0.5;
+    }
+  }
+} 
+
 @media screen and (max-width: 600px) {
   .card-area {
     width: 100%;
@@ -679,7 +679,7 @@ pre, code, .highlighter-rouge .highlight {
     font-size: 1.05rem;
     padding-top: 0.5rem;
   }
-  
+
   .card-area .card-container-section:nth-child(even) .card:hover {
     width: 22rem;
   }
@@ -687,4 +687,16 @@ pre, code, .highlighter-rouge .highlight {
   .card-area .card-container-section:nth-child(odd) .card:hover {
     width: 5rem;
   }
+}
+
+@media screen and (max-width: 425px){
+  .card-decorator {
+    top: calc(2% - 33vw);
+    line-height: 1.6;
+    font-size: 51vw;
+    span {
+      left: -6rem;
+      font-size: 54vw;
+  }
+  } 
 }
