@@ -34,6 +34,38 @@ pre, code, .highlighter-rouge .highlight {
 
 /** Presentation Section **/
 
+.icon-animation:nth-child(1) {
+  position: absolute;
+  animation: infinite 5s rotation-1;
+  scale: 1.3;
+}
+
+@keyframes rotation-1 {
+  0% {
+    transform: rotate( 0.0deg)
+    }
+    10% {
+    transform: rotate(32.0deg)
+    }
+    20% {
+    transform: rotate(0.0deg)
+    }
+    30% {
+    transform: rotate(13.0deg)
+    }
+    40% {
+    transform: rotate(-3.0deg)
+    }
+    50% {
+    transform: rotate(8.0deg)
+    }
+    60% {
+    transform: rotate( 0.5deg)
+    }
+    100% {
+    transform: rotate( 0.0deg)
+    }
+}
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +93,7 @@ pre, code, .highlighter-rouge .highlight {
   font-size: 1.6rem;
   color: #1e1e1e;
   margin-bottom: 1.3rem;
+  font-weight: 100;
 }
 
 .main-text__title span {
@@ -736,6 +769,10 @@ pre, code, .highlighter-rouge .highlight {
 }
 
 @media screen and (max-width: 450px) {
+  
+  .main-text {
+    padding: 2.9rem 15px;
+  }
 
   .main-text__title {
     line-height: normal;
