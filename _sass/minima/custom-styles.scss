@@ -450,7 +450,14 @@ section.technologies-container::before {
 .inside-page__text {
   color: #757575;
   font-size: 1rem;
-  margin-bottom: 0;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .inside-page__text-footer {
@@ -461,13 +468,15 @@ section.technologies-container::before {
 .inside-page__btn-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 0.5rem 0;
+  gap: 0 0.3rem;
 }
 
 .inside-page__btn {
   border: 2px solid #1e1e1e;
   color: #1e1e1e !important;
   padding: 0.2rem 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0.2rem 0.3rem;
   font-weight: 500;
   border-radius: .5rem;
@@ -619,16 +628,12 @@ section.technologies-container::before {
     }
   }
 
-  .card {
-    justify-content: flex-start;
-  }
-
   .card-image {
     margin-left: 15px;
-    min-width: 275px;
-    width: 275px;
-    height: 595px;
-    max-height: 595px;
+    min-width: 200px;
+    width: 200px;
+    height: 433px;
+    max-height: 433px;
   }
 
   .card:nth-of-type(even) {
@@ -645,6 +650,10 @@ section.technologies-container::before {
   .blog__section-title {
     font-size: 1.9rem;
     padding: 2.5rem 2rem;
+  }
+
+  .card {
+    justify-content: flex-start;
   }
 
   .card-front__description {
@@ -684,6 +693,6 @@ section.technologies-container::before {
   }
 
   .card-image:hover {
-    transform: scale(1.05) translateX(-134px) translateY(-8px);
+    transform: scale(1.05) translateX(-120px) translateY(-8px);
   }
 }
