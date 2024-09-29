@@ -417,6 +417,33 @@ section.technologies-container::before {
   cursor: pointer;
 }
 
+.card-front:hover ~ .hand {
+  left: -60px;
+  opacity: 0;
+}
+
+.hand {
+  scale: 1.2;
+  animation: point-right 1s infinite;
+  position: absolute;
+  left: -28px;
+  top: 24rem;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+@keyframes point-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .card-front__tp-container {
   display: flex;
   align-items: center;
