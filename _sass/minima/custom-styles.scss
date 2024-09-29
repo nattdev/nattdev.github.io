@@ -400,7 +400,7 @@ section.technologies-container::before {
   width: 100%;
   background: #ffffff;
   border-radius: 10px;
-  max-height: 5rem;
+  max-height: 0;
   box-sizing: border-box;
   flex-grow: 1;
   display: flex;
@@ -410,7 +410,7 @@ section.technologies-container::before {
   overflow: hidden;
 }
 
-.card-front:hover {
+.card-front__header:hover ~ .card-front {
   max-height: 400px;
 }
 
@@ -653,10 +653,6 @@ section.technologies-container::before {
   .technologies-container {
     margin: 0 15px;
     font-size: 0.95rem;
-
-    ul {
-      padding: 0.5rem 0 0;
-    }
   }
 }
 
@@ -705,7 +701,6 @@ section.technologies-container::before {
 
   .card-front {
     min-width: 215px;
-    padding: 0.7rem;
   }
 
 }
