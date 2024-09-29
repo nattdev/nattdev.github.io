@@ -99,11 +99,11 @@ code,
 }
 
 .main-text span {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
 
 .main-text__title {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #1e1e1e;
   font-weight: 100;
   white-space: pre-wrap;
@@ -116,7 +116,7 @@ code,
 }
 
 .main-text__description {
-  font-size: 1.09rem;
+  font-size: 1.19rem;
   color: #3c3c3c;
   width: 82%;
   margin: auto;
@@ -236,6 +236,7 @@ code,
   backdrop-filter: blur(6px);
   padding: 2rem 0 0;
   border: 0.2px solid #d2d2d2;
+  font-size: 1.1rem;
 
   ul {
     display: flex;
@@ -244,7 +245,7 @@ code,
     gap: 0.5rem 0.2rem;
     align-items: center;
     justify-content: center;
-    margin: 0.5rem 0.5rem;
+    margin: 1rem 0.5rem;
     font-weight: 500;
 
     li {
@@ -495,7 +496,7 @@ section.technologies-container::before {
 
 .inside-page__text {
   color: #757575;
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin: 0.5rem 0;
 
   p {
@@ -510,12 +511,13 @@ section.technologies-container::before {
 .inside-page__text-footer {
   font-size: 0.9rem;
   font-weight: 500;
+  margin-top: 0.3rem;
 }
 
 .inside-page__btn-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
   gap: 0 0.3rem;
 }
 
@@ -598,6 +600,22 @@ section.technologies-container::before {
 
 
 @media screen and (max-width: 800px) {
+  .main-text span {
+    font-size: 1.25rem;
+  }
+  
+  .main-text__title {
+    font-size: 1.6rem;
+  }
+  
+  .main-text__description {
+    font-size: 1.09rem;
+  }
+
+  .inside-page__text {
+    font-size: 1rem;
+  }
+
   h4 {
     font-size: 15px !important;
   }
