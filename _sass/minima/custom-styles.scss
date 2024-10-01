@@ -362,6 +362,10 @@ section.technologies-container::before {
   color: #636363;
 }
 
+.chevron-down {
+  text-align: center;
+}
+
 .card-area {
   flex-wrap: wrap;
   padding: 15px;
@@ -418,33 +422,6 @@ section.technologies-container::before {
   cursor: pointer;
 }
 
-.card-front:hover ~ .hand {
-  left: -60px;
-  opacity: 0;
-}
-
-.hand {
-  scale: 1.2;
-  animation: point-right 1s infinite;
-  position: absolute;
-  left: -28px;
-  top: 24rem;
-  opacity: 1;
-  transition: all 0.5s;
-}
-
-@keyframes point-right {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .card-front__tp-container {
   display: flex;
   align-items: center;
@@ -489,7 +466,31 @@ section.technologies-container::before {
   font-size: 1.1rem;
   margin: 0;
   padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  .chevron-down {
+    transition: all 0.3s;
+  }
 }
+
+.card-front__header:hover .chevron-down {
+  opacity: 0;
+  animation: point-down 0.6s linear;
+}
+
+@keyframes point-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .inside-page__container {
   margin-bottom: auto;
 }
