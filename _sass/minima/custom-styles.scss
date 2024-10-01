@@ -384,7 +384,7 @@ section.technologies-container::before {
   flex-direction: column;
   position: relative;
   border: 1px solid #E3E3E3;
-  padding: 1rem;
+  padding: 1rem 0.9rem;
   border-radius: 16px;
   background: #ffffff;
   box-sizing: border-box;
@@ -457,6 +457,11 @@ section.technologies-container::before {
     padding: 0.2rem 0.3rem;
     border-radius: 6px;
     border: 1px solid #d2d2d2
+  }
+
+  .tech-icon {
+      width: 15px;
+      padding: 0;
   }
 }
 
