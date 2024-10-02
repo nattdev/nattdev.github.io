@@ -19,7 +19,7 @@
   input {
       font-size: 1.1rem;
       border-radius: 10px 10px 0 0;
-      border: 1px solid #5d5d5d;
+      border: 1px solid #7b7b7b;
       padding: 0.2rem 0.5rem;
       width: 100%;
       z-index: 5000;
@@ -27,16 +27,17 @@
   }
 
   ul {
+    top: -3px;
     background: #ffffff;
     list-style: none;
     margin: 0;
-    border-left: 1px solid black;
-    border-bottom: 1px solid #000;
+    border-left: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
     width: 100%;
-    border-right: 1px solid #000;
+    border-right: 1px solid #cbcbcb;
     height: auto;
     position: relative;
-    padding: 0 0.5rem;
+    padding: 3px 0.5rem;
     border-radius: 0 0 10px 10px;
 }
 }
