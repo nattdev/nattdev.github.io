@@ -51,6 +51,19 @@ code,
   background: #fbfbfb;
 }
 
+.post-content.e-content {
+  .img-container {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+
+
 /** Navigation **/
 
 .site-header {
