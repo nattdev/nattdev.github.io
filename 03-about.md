@@ -4,7 +4,7 @@ title: Acerca de 👩‍💻
 permalink: /acercade/
 ---
 
-#### Hola! 👋 Mi nombre es Nataly, soy programadora FrontEnd y actualmente mi stack principal es: **📌React, 📌TypeScript, 📌JavaScript, 📌TailwindCSS.**
+#### Hola! 👋 Mi nombre es Nataly, soy programadora FrontEnd y actualmente las tecnologías que más utilizo son: **<img class="tech-icon" src="/assets/images/technologies/react-icon.svg"/> React, <img class="tech-icon" src="/assets/images/technologies/ts-icon.svg"/> TypeScript, <img class="tech-icon" src="/assets/images/technologies/js-icon.svg"/> JavaScript y <img class="tech-icon" src="/assets/images/technologies/tailwind-icon.svg"/> TailwindCSS.**
 
 Empecé en el mundo de la programación hace 3 años 🚀, y de forma constante he ido incorporando nuevos conceptos y tecnologías a mis proyectos.
 
