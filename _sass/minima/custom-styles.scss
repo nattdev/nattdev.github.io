@@ -35,7 +35,56 @@ code,
   }
 }
 
-/** Presentation Section **/
+/** Project Page **/
+.project-gallery {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  margin: 1rem 0;
+} 
+
+.project-item{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #E3E3E3;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 400px;
+  flex-grow: 1;
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+    text-align: center;
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.column:nth-child(2) .project-item {
+    height: 500px;
+}
+
+.column:nth-child(2) .project-item:nth-child(even) {
+  height: 400px;
+}
+
+.column:nth-child(1) .project-item:nth-child(odd) {
+  height: 300px;
+}
 
 .icon-animation:nth-child(1) {
   position: absolute;
@@ -707,6 +756,28 @@ section.technologies-container::before {
 
   .card-front {
     min-width: 215px;
+  }
+
+  /** Projects Page **/
+
+  .project-item {
+    height: 240px;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .column:nth-child(2) .project-item {
+    height: 220px;
+  }
+
+  .column:nth-child(2) .project-item:nth-child(even) {
+    height: 200px;
+  }
+
+  .column:nth-child(1) .project-item:nth-child(odd) {
+    height: 150px;
   }
 
 }
