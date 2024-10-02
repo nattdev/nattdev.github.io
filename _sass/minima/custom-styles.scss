@@ -62,6 +62,7 @@ code,
 
   span {
     font-size: 0.8rem;
+    margin: 0.3rem 0 0;
   }
 
   h3 {
@@ -763,8 +764,14 @@ section.technologies-container::before {
   .project-item {
     height: 240px;
 
+    span {
+      font-size: 0.7rem;
+    }
+
     h3 {
-      font-size: 1rem;
+      a {
+        font-size: 1rem;
+      }
     }
   }
 
