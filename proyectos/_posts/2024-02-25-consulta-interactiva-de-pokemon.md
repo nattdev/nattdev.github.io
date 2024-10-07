@@ -23,9 +23,9 @@ La interfaz es intuitiva y permite explorar las características de cada Pokémo
 
 - **Reproducción de sonido:** Al buscar un Pokémon, la aplicación permite al usuario escuchar su sonido distintivo.
 
-- **Buscar Pokémon por ID:** Permite a los usuarios ingresar el ID de un Pokémon para obtener información específica.
+- **Buscar Pokémon por ID o nombre** Permite a los usuarios ingresar el ID o nombre de un Pokémon para obtener información específica.
   
-- **Buscar Pokémon por nombre:** Ofrece la opción de buscar Pokémon utilizando su nombre.
+- **Favoritos guardados** Ofrece la opción de guardar tus Pokémon favoritos, añadiéndolos a la lista.
   
 - **Mostrar detalles del Pokémon:** Presenta información detallada sobre el Pokémon seleccionado, incluyendo su tipo, habilidades y movimientos.
 

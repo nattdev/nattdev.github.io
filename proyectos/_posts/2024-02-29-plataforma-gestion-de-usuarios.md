@@ -20,6 +20,8 @@ Una plataforma para gestionar el registro, edición y administración de usuario
 
 - **Registro de nuevos usuarios:** Permite crear perfiles de usuario con información como el nombre, edad y email.  
 
+- **Buscador de registros por nombre:** Permite encontrar usuarios según el término buscado.
+
 - **Actualización de perfiles:** Los perfiles existentes pueden ser editados.  
 
 - **Eliminación de usuarios:** Los perfiles pueden ser eliminados de forma segura.  
