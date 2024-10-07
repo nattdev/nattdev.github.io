@@ -143,10 +143,10 @@ code,
 /** Single Project Page **/
 .single-project-img {
   width: calc(100% - 4rem);
-  height: 400px;
+  height: auto;
   object-fit: cover;
   object-position: top;
-  margin: 2rem;
+  margin: 0.2rem;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -514,7 +514,7 @@ section.technologies-container::before {
 }
 
 .card-image {
-  height: 302px;
+  min-height: 200px;
   width: 100%;
   object-fit: contain;
   object-position: top;
@@ -603,6 +603,11 @@ section.technologies-container::before {
   padding: 0.5rem 0;
   display: flex;
   justify-content: space-between;
+
+  a {
+      text-wrap: nowrap;
+      padding: 0 0.3rem;
+    }
 
   span {
     display: flex;
