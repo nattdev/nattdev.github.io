@@ -33,7 +33,10 @@ Cualquier elemento que posea la propiedad `display: flex` actúa como un contene
 
 Podemos observar la composición de un contenedor `flex` en la siguiente imagen:
 
-![flex-composition](https://raw.githubusercontent.com/nattdev/nattdev.github.io/main/assets/images/posts/flex-composition.svg)
+<div class="img-container">
+<img src="https://raw.githubusercontent.com/nattdev/nattdev.github.io/main/assets/images/posts/flex-composition.svg">
+</div>
+
 
 Los ejes dentro del modelo flex son llamados: "main axis" que representa al eje "x" con dirección de izquierda a derecha, y "cross axis", que representa al eje "y" con dirección de arrriba hacia abajo.
 
@@ -117,7 +120,9 @@ Cualquier elemento que posea la propiedad `display: grid` actúa como un contene
 
 Podemos observar la composición de un contenedor `grid` en la siguiente imagen:
 
-![grid-composition](https://raw.githubusercontent.com/nattdev/nattdev.github.io/main/assets/images/posts/grid-composition.svg)
+<div class="img-container">
+<img alt="grid-composition" src="https://raw.githubusercontent.com/nattdev/nattdev.github.io/main/assets/images/posts/grid-composition.svg">
+</div>
 
 Se conforma por filas y columnas establecidas en las propiedades del contenedor grid.
 

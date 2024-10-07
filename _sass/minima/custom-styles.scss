@@ -104,8 +104,8 @@ code,
   border: 1px solid #E3E3E3;
   border-radius: 16px;
   overflow: hidden;
-  height: 400px;
-  flex-grow: 1;
+  height: auto;
+  // flex-grow: 1;
 
   span {
     font-size: 0.8rem;
@@ -128,17 +128,17 @@ code,
   }
 }
 
-.column:nth-child(2) .project-item {
-    height: 500px;
-}
+// .column:nth-child(2) .project-item {
+//     height: 500px;
+// }
 
-.column:nth-child(2) .project-item:nth-child(even) {
-  height: 400px;
-}
+// .column:nth-child(2) .project-item:nth-child(even) {
+//   height: 400px;
+// }
 
-.column:nth-child(1) .project-item:nth-child(odd) {
-  height: 300px;
-}
+// .column:nth-child(1) .project-item:nth-child(odd) {
+//   height: 300px;
+// }
 
 /** Single Project Page **/
 .single-project-img {
@@ -387,6 +387,12 @@ code,
   vertical-align: sub;
 }
 
+.project-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: none;
+}
+
 section.technologies-container::before {
   content: ">_Tecnologías usadas";
   width: 100%;
@@ -534,9 +540,9 @@ section.technologies-container::before {
 //   max-height: 400px;
 // }
 
-.card-front__header {
-  cursor: pointer;
-}
+// .card-front__header {
+//   cursor: pointer;
+// }
 
 .card-front__tp-container {
   display: flex;
@@ -598,13 +604,20 @@ section.technologies-container::before {
   display: flex;
   justify-content: space-between;
 
+  span {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
   .chevron-down {
     transition: all 0.3s;
   }
 }
 
 .card-front__wrapper:hover .chevron-down {
-  opacity: 0;
+  opacity: 0.7;
   animation: point-down 0.6s linear;
 }
 
@@ -787,17 +800,17 @@ section.technologies-container::before {
     font-size: 0.95rem;
   }
 
-  .column:nth-child(2) .project-item {
-    height: 220px;
-  }
+  // .column:nth-child(2) .project-item {
+  //   height: 220px;
+  // }
 
-  .column:nth-child(2) .project-item:nth-child(even) {
-    height: 225px;
-  }
+  // .column:nth-child(2) .project-item:nth-child(even) {
+  //   height: 225px;
+  // }
 
-  .column:nth-child(1) .project-item:nth-child(odd) {
-    height: 320px;
-  }
+  // .column:nth-child(1) .project-item:nth-child(odd) {
+  //   height: 320px;
+  // }
 
 }
 
@@ -851,7 +864,7 @@ section.technologies-container::before {
   /** Projects Page **/
 
   .project-item {
-    height: 240px;
+    height: auto;
 
     span {
       font-size: 0.7rem;
@@ -864,7 +877,7 @@ section.technologies-container::before {
     }
   }
 
-  .column:nth-child(1) .project-item:nth-child(odd) {
-    height: 160px;
-  }
+  // .column:nth-child(1) .project-item:nth-child(odd) {
+  //   height: 160px;
+  // }
 }
