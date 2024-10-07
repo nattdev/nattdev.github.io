@@ -487,7 +487,7 @@ section.technologies-container::before {
   padding: 15px;
   width: auto;
   display: flex;
-  gap: 6rem 2rem;
+  gap: 6rem 5rem;
   justify-content: center;
   z-index: 600;
 }
@@ -496,7 +496,7 @@ section.technologies-container::before {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 350px;
+  max-width: 470px;
   flex-direction: column;
   position: relative;
   border: 1px solid #E3E3E3;
@@ -508,9 +508,9 @@ section.technologies-container::before {
 }
 
 .card-image {
-  height: 250px;
+  height: 302px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
   border-radius: 16px;
   margin-bottom: 1rem;
@@ -520,7 +520,7 @@ section.technologies-container::before {
   width: 100%;
   background: #ffffff;
   border-radius: 10px;
-  max-height: 0;
+  max-height: auto;
   box-sizing: border-box;
   flex-grow: 1;
   display: flex;
@@ -530,9 +530,9 @@ section.technologies-container::before {
   overflow: hidden;
 }
 
-.card-front__wrapper:hover > .card-front {
-  max-height: 400px;
-}
+// .card-front__wrapper:hover > .card-front {
+//   max-height: 400px;
+// }
 
 .card-front__header {
   cursor: pointer;
@@ -540,8 +540,11 @@ section.technologies-container::before {
 
 .card-front__tp-container {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 0 1rem;
 
   img {
     align-self: self-start;
