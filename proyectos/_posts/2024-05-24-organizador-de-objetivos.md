@@ -34,8 +34,8 @@ Funciona offline y puede instalarse en dispositivos móviles y PCs.
 - **Almacenamiento local:** Los datos se guardan en localStorage, lo que permite su persistencia incluso al cerrar el navegador.
 
 <div class="inside-page__btn-container">
-  <a href="#" class="inside-page__btn">🔗 Ver Demo</a>
-  <a href="https://github.com/nattdev/#" class="inside-page__btn">
+  <a href="https://goal-card-organizer.vercel.app/" class="inside-page__btn">🔗 Ver Demo</a>
+  <a href="https://github.com/nattdev/goal-card-organizer" class="inside-page__btn">
     <img src="../assets/images/technologies/github-icon.svg" />Ver Código
   </a>
 </div>
