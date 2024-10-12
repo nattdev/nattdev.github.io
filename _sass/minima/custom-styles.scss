@@ -121,11 +121,11 @@ code,
     }
   }
 
-  .single-project-img {
-    width: calc(100% - 0.6rem);
-    margin: 0.3rem;
-    height: auto;
-  }
+  // .single-project-img {
+  //   width: calc(100% - 0.6rem);
+  //   margin: 0.3rem;
+  //   height: auto;
+  // }
 }
 
 // .column:nth-child(2) .project-item {
@@ -142,7 +142,7 @@ code,
 
 /** Single Project Page **/
 .single-project-img {
-  width: calc(100% - 4rem);
+  width: 100%;
   height: auto;
   object-fit: cover;
   object-position: top;
