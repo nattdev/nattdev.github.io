@@ -471,6 +471,8 @@ section.technologies-container::before {
   padding: 2rem 4rem;
   color: #1e1e1e;
   margin: 0;
+  z-index: 500;
+  position: relative;
 }
 
 .project-title span,
