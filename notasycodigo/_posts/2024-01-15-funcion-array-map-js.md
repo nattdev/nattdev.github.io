@@ -1,7 +1,7 @@
 ---
 layout: post
 title: La función ARRAY.map()
-category: "JavaScript"
+category: "Bases JavaScript"
 ---
 
 Nos permite iterar sobre un arreglo y modificar sus elementos utilizando una funcion callback. Esta funcion se ejecuta en cada uno de los elementos obteniendo nuevos valores.

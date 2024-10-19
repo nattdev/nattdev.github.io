@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Desestructuración de objetos y arreglos
-category: "JavaScript"
+category: "Bases JavaScript"
 ---
 
 Permite obtener los valores de propiedades o arreglos en diferentes variabes.
