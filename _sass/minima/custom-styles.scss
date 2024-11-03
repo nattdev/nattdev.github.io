@@ -883,9 +883,16 @@ section.technologies-container::before {
         font-size: 1rem;
       }
     }
+            // .column:nth-child(1) .project-item:nth-child(odd) {
+            //   height: 160px;
+            // }
   }
 
-  // .column:nth-child(1) .project-item:nth-child(odd) {
-  //   height: 160px;
-  // }
+  @media screen and (max-width: 375px) {
+    table {
+      font-size: 11px;
+    }
+  }
+  
+
 }
