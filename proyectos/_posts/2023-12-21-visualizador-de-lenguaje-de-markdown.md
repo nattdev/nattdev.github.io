@@ -23,6 +23,8 @@ Permite escribir en Markdown y ver instantáneamente el resultado en la pantalla
 - **Tema visual con estilo clásico:**
 La interfaz del editor y la previsualización recuerda a las ventanas de Windows 7.
 
+>  Proyecto desarrollado como parte del programa de Front End Development Libraries – FreeCodeCamp (FCC)
+
 <div class="inside-page__btn-container">
   <a href="https://nattdev.github.io/markdown-previewer/" class="inside-page__btn">🔗 Ver Demo</a>
   <a href="https://github.com/nattdev/markdown-previewer" class="inside-page__btn">

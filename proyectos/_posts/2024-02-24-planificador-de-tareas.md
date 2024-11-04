@@ -26,6 +26,8 @@ Una aplicación que permite crear, leer, actualizar y eliminar tareas de manera 
 
 - **Eliminar tareas:** Permite eliminar tareas de la lista
 
+> Basado en el proyecto MERN Stack con MySQL - React MySQL CRUD de Fazt Code  
+
 <div class="inside-page__btn-container">
   <a href="https://client-crud-to-do-list-pern.vercel.app/" class="inside-page__btn">🔗 Ver Demo</a>
   <a href="https://github.com/nattdev/crud-to-do-list-pern" class="inside-page__btn">
