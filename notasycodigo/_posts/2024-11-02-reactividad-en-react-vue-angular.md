@@ -86,7 +86,6 @@ Angular utiliza Observables para rastrear y gestionar eventos asíncronos, como 
 
 **Ejemplo:**
 ```typescript
-Copiar código
 import { Component } from '@angular/core';
 import { Observable, interval } from 'rxjs';
 
