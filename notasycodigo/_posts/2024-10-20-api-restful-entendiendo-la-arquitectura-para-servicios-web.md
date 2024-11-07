@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API RESTful Entendiendo la Arquitectura para Servicios Web
-category: "Desarrollo De Software"
+category: "API"
 ---
 
 Las **APIs RESTful** se han convertido en el estándar para desarrollar servicios web modernos debido a su flexibilidad, simplicidad y escalabilidad.
