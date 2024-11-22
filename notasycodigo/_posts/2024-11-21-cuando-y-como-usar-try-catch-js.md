@@ -110,23 +110,23 @@ Usar `try-catch` en ciclos críticos puede ralentizar tu aplicación. Limítalo 
 
 ## Buenas prácticas con `try-catch`
   
-### Proporciona mensajes útiles
+- **Proporciona mensajes útiles:** 
 Informa al usuario o al desarrollador qué salió mal.
 
 ```javascript
 console.error("No se pudo procesar el archivo. Verifica que el formato sea correcto.");
 ```
 
-### No abuses de `try-catch`
+- **No abuses de `try-catch`:** 
 Úsalo solo cuando sea necesario. Para errores comunes, valida previamente los datos.
 
-### Loguea errores para depuración
+- **Loguea errores para depuración:** 
 Usa herramientas como console.error o servicios de monitoreo para registrar errores.
 
-### Mantén el bloque `try` corto
+- **Mantén el bloque `try` corto:** 
 Es más fácil de depurar si el código dentro de `try` es breve y específico.
 
-### Re-lanzar errores si es necesario
+- **Re-lanzar errores si es necesario:** 
 Si no puedes manejar un error en el catch, puedes volver a lanzarlo.
 
 ```javascript
